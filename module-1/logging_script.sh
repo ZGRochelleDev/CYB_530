@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Module 1
+
 # Zoe Rochelle
 # Programming for Security Professionals
 # Professor Lang
