@@ -49,7 +49,7 @@ data_formatter() {
     # -R
     # read raw text instead of expecting JSON input
 
-    # -s
+    # s
     # concat all input into a single string, not line by line
 
     # .
