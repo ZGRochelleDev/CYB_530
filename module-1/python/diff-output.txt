@@ -1,0 +1,46 @@
+Differences: There are 2
+
+In portscannerv2, input() function was changed to raw_input(). The Python team heavily altered (improved) this function's design, and renamed it to reflect this change.
+
+In Python 3, print is a built-in function, but in Python 2 'print' is a reserved keyword, like 'return' or 'break'. In portscannerv2, the print functions were changed to keywords.
+
+
+11c11,13
+< remoteServer    = raw_input("Enter a remote host to scan: ")
+---
+> # V2  remoteServer    = raw_input("Enter a remote host to scan: ")
+> # V3 no raw_input() -- raw_input() is now input()
+> remoteServer    = input("Enter a remote host to scan: ")
+15,17c17,19
+< print "-" * 60
+< print "Please wait, scanning remote host", remoteServerIP
+< print "-" * 60
+---
+> print ("-" * 60)
+> print ("Please wait, scanning remote host", remoteServerIP)
+> print ("-" * 60)
+31c33
+<             print "Port {}: 	 Open".format(port)
+---
+>             print ("Port {}: 	 Open".format(port) )
+35c37
+<     print "You pressed Ctrl+C"
+---
+>     print ("You pressed Ctrl+C")
+39c41
+<     print 'Hostname could not be resolved. Exiting'
+---
+>     print ('Hostname could not be resolved. Exiting')
+43c45
+<     print "Couldn't connect to server"
+---
+>     print ("Couldn't connect to server")
+53c55
+< print 'Scanning Completed in: ', total
+---
+> print ('Scanning Completed in: ', total)
+
+
+
+
+

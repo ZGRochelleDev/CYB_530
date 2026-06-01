@@ -1,0 +1,4 @@
+Objectives: change the following
+    1. Scan ALL of the TCP ports from 1 to 65535
+    2. Change the main loop to scan the ports in descending order (65535 to 1)
+    3. Add code to print out the 'service' name using getservbyport()
