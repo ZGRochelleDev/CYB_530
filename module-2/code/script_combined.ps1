@@ -95,4 +95,5 @@ function Test-GetProcess {
 (Test-GetProcess)
 
 ## Run with:
+# Set-ExecutionPolicy RemoteSigned
 # .\script_combined.ps1
