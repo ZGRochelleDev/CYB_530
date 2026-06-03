@@ -1,0 +1,44 @@
+## Background ##
+
+    Create PowerShell 'scripts' to display highlights for current system activity and security situational awareness.
+
+    Install Microsoft PowerShell on your Linux and Windows AWS "instances".
+
+    You only need the PowerShell Command Line in order to do this assignment but you have your choice of doing this PowerShell assignment on either your Windows server "instance" or your Linux server "instance".
+
+    You should be able to invoke PowerShell from the regular Windows command line by typing in "powershell".
+
+
+## SCENARIO ##
+
+    You believe you have an ongoing security incident on your network. You will create a few PowerShell 'scripts' to run a number of OS commands and extract relative information quickly and display this filtered 'view' of system activity -- to allow security staff to continuously monitor your server for activity by running whichever scripts to report on potential suspicious activity on demand.
+
+
+## ToDo ##
+
+    REQUIREMENTS: Create the following 4 "PowerShell scripts" using the PowerShell commnd line on EITHER your Linux OR your Windows computer (or "virtual machine" AKA VM).
+
+        1. A PS script to list the ESTABLISHED network connections:
+
+            A PS script to run the 'netstat -a' command and print all of the 'ESTABLISHED' sessions (use the 'select-string' Powershell function to only select the lines containing " ESTABLISHED" ).
+
+        2. A PS script to list the IPv4 network connections:
+
+            A PS script to run the 'netstat -a' command and print all of the 'IP Version 4' connections (pipe the output from the 'netstat -a' command into the PowerShell 'select-string' function to extract only the lines which match on "tcp4", "udp4" or "icm4").
+
+            Note that some versions of netstat don't identify IPv4 connections as "tcp4", "udp4" or "icm4" but rather as "tcp", "udp" or "icmp", etc.
+
+        3. A PS script to list the IPv6 network connections:
+
+            A PS script to run the 'netstat -a' command and print all of the 'IP Version 6' connections (pipe the output from the 'netstat -a' command into the PowerShell 'select-string' function to extract only the lines which match on "tcp6", "udp6" or "icm6" ).
+
+        4. A PS script to list the currently running processes being run by the user 'root' on LInux OR the user 'administrator' on Windows:
+
+            Run the PowerShell function Get-Process to get information on all of the running processes on the system (server) and -- using the option to have a column with the 'username' of the user running the process -- pipe the output into the PowerShell 'select-string' function to extract only the lines which match on the 'root' user on Linux and 'administrator 'on Windows).
+
+
+## In your post ##
+
+    Post a copy of all of your scripts, screenshots, text description and their output to the discussion board in your post.  Please paste directly in the post rather than including as an attachment in order to encourage other students to view and respond to your post and encourage a converation.
+
+    In your replies to other student's posts make constructive suggestions about improvements both their scripts and your's could implement to provide better security situational awareness information for security operations staff monitoring the server.
