@@ -71,6 +71,7 @@ $commandList = @(
 )
 
 ## iterate through each command
+# - the backticks let you write cmds on seperate lines
 foreach ($cmd in $commandList) {
     Test-Sys-Activity `
         -Status $cmd.Status `
