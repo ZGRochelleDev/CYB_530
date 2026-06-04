@@ -1,0 +1,7 @@
+administrator    admin
+helpdesk         pa$$word
+test             test
+cypherpunk       cypherpunk
+caesar           julius
+trithemius       polymath
+vigenere         blase
