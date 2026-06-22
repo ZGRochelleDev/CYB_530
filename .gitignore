@@ -1,4 +1,5 @@
 **/log_output/
 *.py
+!/module-2/code/python/pw_secure.py
 *.ps1
 *.sh
