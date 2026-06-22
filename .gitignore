@@ -1,1 +1,4 @@
 **/log_output/
+*.py
+*.ps1
+*.sh
